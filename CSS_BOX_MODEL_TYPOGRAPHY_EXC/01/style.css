@@ -1,0 +1,88 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* div {
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+
+.margin {
+    position: relative;
+    left: 50%;
+    top:300px;
+    transform: translate(-50%, -50%);
+    width:500px;
+    height: 300px;
+    background-color: orange;
+}
+
+.border {
+    width:400px;
+    height: 200px;
+    background-color: rgb(255, 244, 146);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.padding {
+    width:350px;
+    height: 120px;
+    background-color: rgb(113, 255, 146);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    width:300px;
+    height: 70px;
+    background-color: rgb(77, 175, 255);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;              /* enable flexbox */
+  /* justify-content: center;    /* center horizontally */
+  /* align-items: center;  */ 
+
+main {
+    max-width: 600px;
+    margin: 3em auto;
+  }
+
+main div {
+    border:1px dashed gray;
+    padding: 30px;
+    position: relative;
+}
+
+main .content {
+    text-align: center;
+    background-color: lightblue;
+}
+
+
+
+.margin {
+    background-color: orange;
+}
+
+.padding {
+    background-color: yellow;
+}
+
+.border {
+    background-color: green;
+}
+
+p {
+    position: absolute;
+    top:0;
+    left:0;
+}

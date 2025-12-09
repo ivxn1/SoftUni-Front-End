@@ -1,0 +1,31 @@
+/* Selector List for Text Styles */
+h1, h2, p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+/* Selector List for Layout Styles */
+header, section, footer {
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius:20px;
+}
+
+/* Selector List for Hover Effects */
+nav a:hover, 
+section a:hover, 
+footer a:hover {
+  color: white;
+  background-color: #0073e6;
+  padding: 3px 6px;
+  border-radius: 50px;
+}
+
+/* Combining Different Types of Selectors */
+h1, 
+section p, 
+footer a {
+  text-align: center;
+  font-style: italic;
+}

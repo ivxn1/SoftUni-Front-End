@@ -1,0 +1,24 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid green;
+    padding: 2em;
+}
+
+body > div {
+    border:2px solid black;
+}
+
+body > div:not(:first-child) {
+    margin-top: 2em;
+}
+
+div > p {
+    margin: 2em 4em;
+    padding: 2em;
+    border: 2px solid blue;
+}

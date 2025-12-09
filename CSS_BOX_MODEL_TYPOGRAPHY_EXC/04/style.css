@@ -1,0 +1,52 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    padding: 15px;
+    background-color: gray;
+}
+
+
+.card {
+    display: block;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 350px;
+    margin: 0 auto;
+    border: 1px solid darkgray;
+    box-shadow: 0 4px 10px black;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;;
+}
+
+.card .info {
+    padding:10px 25px;
+}
+
+.info h2 {
+    font-size: 20px ;
+}
+
+.info p {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.webpage {
+    font-weight: bold;
+}
+
+footer .link {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+}

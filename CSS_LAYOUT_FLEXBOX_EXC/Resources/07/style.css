@@ -1,0 +1,111 @@
+/* styles.css */
+
+/* Basic reset and container styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Remove default list styling */
+.tree-view ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* General list item styling for positioning the lines */
+.tree-view li {
+    position: relative;
+    padding-left: 20px; /* Space for the line and icon */
+}
+
+/* Hide the default details marker */
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker,
+details > summary::marker {
+    display: none;
+}
+
+/* --- Styling the Tree Structure Lines --- */
+
+/* Vertical Line Connector (Runs down the left of the list) */
+.tree-view ul ul li:before {
+    content: '';
+    position: absolute;
+    left: 10px; /* Aligns with the vertical line below the parent */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ccc; /* Line color */
+}
+
+/* Horizontal Line Connector (Runs from vertical line to the node) */
+.tree-view ul ul li:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 15px; /* Adjust to align with text/icon */
+    width: 10px; /* Length of the horizontal line */
+    height: 2px;
+    background: #ccc; /* Line color */
+}
+
+/* For the last item in a list, cut the vertical line short */
+.tree-view ul ul li:last-child:before {
+    height: 15px; /* Only extends up to the horizontal line */
+}
+
+/* Fix the padding for the label itself */
+.tree-node {
+    margin: 5px 0;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1.5; /* Helps align the icon */
+    position: relative; /* For icon positioning */
+}
+
+/* --- Styling the Icon (Circle with + or -) --- */
+
+/* Icon container for all nodes */
+.tree-label::before {
+    content: '';
+    position: absolute;
+    left: -20px; /* Position to the left of the label text */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #5aa663; /* Green circle color */
+    border: 1px solid #5aa663;
+}
+
+/* Specific icon for collapsible nodes (details/summary) */
+summary.tree-label::after {
+    content: '+'; /* Default state (closed) */
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    left: -17px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1; /* Ensures + and - are centered */
+    text-align: center;
+}
+
+/* Change icon when the details is open (expanded) */
+details[open] > summary.tree-label::after {
+    content: '-'; /* Open state */
+}
+
+/* Remove icon for non-collapsible leaf nodes (simple <li>) */
+li.tree-label::before {
+    content: ''; /* Still shows the circle */
+}
+li.tree-label::after {
+    content: ''; /* No +/- sign */
+}

@@ -1,0 +1,28 @@
+p#normal {
+    color:orchid
+}
+
+p.highlighted {
+    color:rgb(55, 182, 0);
+    font-size: 30px;
+}
+
+p {
+    color: red;
+}
+
+
+div#colored-div {
+    background-color: blueviolet;
+    padding:2em;
+}
+
+[type="text"].special {
+    border-color: blueviolet;
+    padding:2em;
+}
+
+.paragraph-class.special-one {
+    font-style: oblique;
+    font-weight: 100;
+}

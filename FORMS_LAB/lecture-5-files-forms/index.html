@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <body>
+    <section class="section">
+      <h1>Forms</h1>
+    </section>
+
+    <!-- 📝 Task 1: Create a Short Search Form
+    Goal: Build a small search form that allows users to search a website or database.
+    Requirements:
+    - Search Query → text input (<input type="text">)
+        - Required field
+        - Placeholder: “Enter your search…”
+    - Category → select menu (<select><option>…</option></select>)
+        - Options: All, Articles, Products, Users
+        - Default: “All”
+    - Search Button → submit button
+   -->
+
+    <section class="section">
+      <h2>Search form</h2>
+      <form action="./search.html" method="get">
+        <div>
+          <label for="search">Search Query</label>
+          <input
+            id="search"
+            type="text"
+            required
+            placeholder="Enter your search..."
+            name="search"
+          />
+        </div>
+
+        <div>
+          <label for="category">Category</label>
+          <select name="category" id="category">
+            <option value="" selected>All</option>
+            <option value="articles">Articles</option>
+            <option value="products">Products</option>
+            <option value="users">Users</option>
+          </select>
+        </div>
+
+        <button>Search</button>
+      </form>
+    </section>
+
+    <!-- 📝 Task 2: Create a Login Form
+    Goal: Build a simple login form for users to authenticate.
+    Requirements:
+    - Username / Email → text or email input (<input type="text"> or <input type="email">)
+        - Required field
+    - Password → password input (<input type="password">)
+        - Required field
+    - Login Button → submit button 
+   -->
+
+    <section class="section">
+      <h2>Login form</h2>
+      <form action="./profile.html" method="get">
+        <div>
+          <label for="user">Username / Email</label>
+          <input type="text" name="user" id="user" required />
+        </div>
+
+        <div>
+          <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass" required />
+        </div>
+
+        <button>Login</button>
+      </form>
+    </section>
+
+    <!-- 📝 Task 3: Create a User Registration Form
+    Goal: Create a registration form that collects user details with different types of inputs.
+    Requirements:
+    - Username → text input
+        - Required field
+    - Password → password input
+        - Required field
+    - Age → number input
+        - Optional, range 1–120
+    - Email Address → email input
+        - Required field
+    - Gender → radio buttons
+        - Options: Male, Female, Other
+        - Required field (user must pick one)
+    - Hobbies → checkboxes
+        - Options: Reading, Music, Sports
+        - Optional, multiple can be selected
+    - Country → select menu
+        - Options: Bulgaria, Germany, USA, UK
+        - Default disabled option like “Choose your country” at the top (cannot be selected as a valid answer)
+        - Country itself = Required field
+    - Phone Number → text or tel input
+        - Disabled by default (cannot be typed into or submitted)
+    - Submit Button → to send the form
+    - Cancel Button → to remove all text
+-->
+
+    <section class="section">
+      <h2>User Registration Form</h2>
+
+      <form action="" method="get">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" name="user" id="username" required />
+        </div>
+        <div>
+          <label for="passw">Password</label>
+          <input type="password" name="pass" id="passw" required />
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div>
+          <fieldset>
+            <legend>Gender</legend>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" required />
+
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" required />
+
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" required />
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset>
+            <legend>Hobbies</legend>
+            <label
+              >Reading
+              <input type="checkbox" name="hobbies" />
+            </label>
+            <label
+              >Music
+              <input type="checkbox" name="hobbies" />
+            </label>
+            <label
+              >Sports
+              <input type="checkbox" name="hobbies" />
+            </label>
+          </fieldset>
+        </div>
+
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="" disabled selected>Choose your country</option>
+                <option value="BG">Bulgaria</option>
+                <option value="GER">Germany</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="tel">Phone number</label>
+            <input type="tel" id="tel" name="tel" disabled>
+        </div>
+        <button>Submit</button>
+        <button>Cancel</button>
+      </form>
+    </section>
+  </body>
+</html>

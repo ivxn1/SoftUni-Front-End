@@ -1,0 +1,44 @@
+nav a {
+    color:red;
+    font-family: cursive;
+}
+
+nav a#home {
+    font-weight: 900;
+}
+
+/* div.articles > section#services {
+    background-color: blueviolet;
+} */
+
+section + header {
+    color:green;
+    font-variant: small-caps;
+    text-decoration:overline;
+}
+
+header h1 span {
+    color:red;
+}
+
+div.articles section#services ~ article.article2 {
+    background-color: blue;
+}
+
+form input#inputField[type="text"] {
+    background-color: brown;
+    padding: 5px;
+    width: 300px;
+}
+
+footer p:first-child{
+    background-color: darkorange;
+}
+
+header#myHeader::before {
+    content: "hi";
+}
+
+header#myHeader::after {
+    content: "bye"
+}

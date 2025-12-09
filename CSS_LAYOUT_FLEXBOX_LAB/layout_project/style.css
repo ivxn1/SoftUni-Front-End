@@ -1,0 +1,101 @@
+ul {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  /* align-items: center; */
+  padding:6px 30px;
+  background-color: rgb(211, 254, 240);
+  justify-content: center;
+  /* gap:30px */
+}
+
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+    justify-content: space-between;
+    /* margin: 6px auto; */
+  gap:30px;
+  flex-grow: 1;
+}
+
+.header .logo {
+  width: 50px;
+  flex-shrink: 0;
+}
+
+.header .navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.goldenLayout {
+    display: flex;
+    gap:30px;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.sidebar {
+    background-color: bisque;
+    flex: 0 0 150px;
+}
+
+.sidebar .title {
+    font-size: 1rem;
+    padding: 10px
+}
+
+.sidebar .links {
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap:10px
+}
+
+.heroSection {
+    background-color: rgb(231, 247, 168);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSection .wrapper {
+    max-width: 400px;
+    text-align: center;
+}
+
+.btnGroup {
+    padding: 10px 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: lightgray;
+}
+
+.btnGroup .save {
+    margin-left: auto;
+}
+
+.imgGrid {
+        max-width: 900px;
+    margin: 30px auto;
+    background-color: lightgray;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap:12px;
+    align-items: center;
+}
+
+.imgGrid .image {
+    width: 200px;
+}

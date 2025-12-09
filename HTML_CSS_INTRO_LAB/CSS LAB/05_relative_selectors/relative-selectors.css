@@ -1,0 +1,19 @@
+section p {
+    color: green;
+}
+
+ul#firstlist > li {
+    font-weight: 900;
+}
+
+article.secondarticle + article {
+    background-color: brown;
+}
+
+h2#specialheading ~ p {
+    color:blue;
+}
+
+li#firstItem ~ li a {
+    color:orange;
+}

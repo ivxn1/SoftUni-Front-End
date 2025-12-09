@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    
+}
+
+.calendar {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    max-width:1100px;
+    width: 100%;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar li {
+    padding: 1rem;
+    font-size: 0.75rem;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid lightgray
+}
+
+
+.full {
+    width:100%
+}
+
+.fifth {
+    width: 20%
+}
+
+.second {
+    width:50%
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.tasks .item{
+    flex-basis: 100px;
+    flex-grow: 1;
+    text-align: center;
+}

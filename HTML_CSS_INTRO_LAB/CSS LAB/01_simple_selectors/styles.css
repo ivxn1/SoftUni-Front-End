@@ -1,0 +1,32 @@
+h1 {
+    color:cadetblue;
+}
+
+
+p {
+    font-size: 50px;
+}
+
+.highlight {
+    background-color: chartreuse;
+}
+
+#main-title {
+    color:blueviolet;
+}
+
+#special-paragraph {
+    font-style: italic;
+}
+
+ul {
+    list-style-type:lower-greek;
+}
+
+ul li {
+    color:brown
+}
+
+div {
+    background-color: coral;
+}

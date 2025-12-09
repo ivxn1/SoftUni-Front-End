@@ -1,0 +1,79 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.mainContainer {
+    background-color: lightgray;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 700px;
+    width: 100%;
+
+    background-color: white;
+    padding: 1.5rem;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.post .right-half {
+    width:200px;
+    aspect-ratio: 4/3;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border:1px solid gray;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    background-color: lightgray;
+}
+
+
+.post .left-half .textInfo .subtitle {
+    color:gray;
+    font-weight: 550;
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+}
+
+.post .left-half .textInfo .title {
+    font-size: 1.6rem;
+}
+
+.post .left-half .textInfo .text {
+    font-size: 0.8rem;
+    margin: 1rem 0 1rem 0
+}
+
+.post .left-half .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.post .left-half .buttons button {
+    padding:0.5rem;
+    border-radius: 8px;
+    border: 0;
+    width: 100px;
+    box-shadow: 0 2px 8px rgba(136, 6, 136, 0.15);
+}
+
+.post .left-half .buttons button:nth-child(1) {
+    background-color: rgb(136, 6, 136);
+    color: white;
+}

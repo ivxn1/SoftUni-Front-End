@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+section {
+  padding: 20px;
+}
+
+div {
+  display: inline-block;
+  margin: 0 15px;
+  width: 100px;
+  height: 50px;
+  border: 1px dashed gray;
+  border-radius: 5%;
+}
+
+button {
+  display: inline-block;
+  margin: 0 15px;
+  width: 100px;
+  height: 50px;
+  border: 1px dashed gray;
+  border-radius: 5%;
+}
+
+.link1 {
+  background-color: gray;
+}
+
+.link2 {
+  background-color: orange;
+}
+
+.link3 {
+  background-color: yellow;
+}
+
+.link5 {
+  background-color: gray;
+}
+
+.button1 {
+  background-color: gray;
+}
+
+.button2 {
+  background-color: orange;
+}
+
+.button3 {
+  background-color: yellow;
+}
+
+.button4 {
+  background-color: white;
+}
+
+.button5 {
+  background-color: gray;
+}
+
+div p {
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+}
+
+button p {
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+}
+
+.button5 i, .button5 p{
+    margin: 0 3px;
+    display: inline-block;
+    vertical-align: middle;
+}

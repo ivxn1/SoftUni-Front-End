@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+
+.container > div {
+    background-color: white;
+    border: 1px solid lightgray;
+    max-width: 1100px;
+    width: 100%;
+    box-shadow: 0 4px 16px 0 gray;
+}
+
+.firstBox {
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.firstBox div {
+    border: 1px solid lightgray;
+    padding: 1rem 2rem
+}
+
+.firstBox .header {
+    width: 100%;
+}
+
+.firstBox .mainContent {
+    flex-grow: 1;
+}
+
+.firstBox .sideBar {
+    flex-grow: 0.5;
+}
+
+.firstBox .siteFooter {
+    width: 100%;
+}
+
+.secondBox {
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+}
+
+.secondBox div {
+    border: 1px solid lightgray;
+    padding: 1rem 2rem;
+}
+
+.secondBox .header {
+    width: 100%;
+}
+
+.secondBox .mainContent {
+    flex-grow: 1;
+}
+
+.secondBox .sideBar {
+    flex-grow: 0.5;
+}
+
+.secondBox .siteFooter {
+    width: 100%;
+}

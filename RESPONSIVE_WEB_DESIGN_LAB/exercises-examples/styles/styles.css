@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    background-color: #eaf6fb;
+    border: 1px solid #90caf9;
+    border-radius: 6px;
+    padding: 16px 20px;
+    color: #1565c0;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: 24px auto;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.08);
+}
+
+.info .icon {
+    font-size: 1.8em;
+    margin-right: 14px;
+    color: #1976d2;
+    flex-shrink: 0;
+}
+
+.info .text {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+/* --- MEDIA QUERIES --- */
+
+.info {
+    display: none;
+}
+
+@media (hover: none) {
+    .hover-support {
+        display: block;
+    }
+}
+
+@media (orientation: landscape) {
+    .landscape-orientation {
+        display: block;
+    }
+}
+
+@media (width:600px) {
+    .viewport-width-600 {
+        display: block;
+    }
+}
+
+@media (height: 800px) {
+    .viewport-height-800 {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .viewport-width-gt-1200 {
+        display: block;
+    }
+}
+
+@media not (max-width:1200px) {
+    .viewport-width-gt-1200-not {
+        display: block;
+    }
+}
+
+@media (max-width:800px) {
+    .viewport-width-lt-800 {
+        display: block;
+    }
+}
+
+
+@media (min-width:800px) and (max-width:1200px) {
+    .viewport-width-gt-800-lt-1200 {
+        display: block;
+    }
+}
+
+
+@media (min-height:680px),
+screen and (orientation: portrait) {
+    .viewport-height-gt-680-or-portrait {
+        display: block;
+        background-color: lightcoral;
+    }
+}
