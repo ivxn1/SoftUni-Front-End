@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwind Exercise</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+        <div class="shadow-sm sticky top-0 left-0">
+            <header
+                class="bg-white m-auto px-14 py-6 flex items-center justify-between 2xl:px-0 gap-8 max-w-7xl"
+            >
+                <img class="h-9" src="./assets/Logo.png" alt="Logo" />
+                <nav
+                    class="hidden lg:flex lg:flex-row lg:top-auto lg:flex-grow lg:relative lg:left-auto lg:potext-base font-medium top-full gap-8 text-center absolute list-none flex-col w-10/10"
+                >
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Marketplace</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Contact</a></li>
+                </nav>
+                <div class="flex gap-4 items-center lg:shrink-0">
+                    <a
+                        class="text-sm font-medium shrink-0 text-gray-900"
+                        href=""
+                        >Log in</a
+                    >
+                    <button
+                        class="rounded-lg px-3 py-2 shrink-0 cursor-pointer hover:bg-purple-400 hover:text-gray-900 transition-colors bg-purple-600 text-white text-sm font-medium"
+                    >
+                        Get started
+                    </button>
+                </div>
+            </header>
+        </div>
+
+        <main>
+            <section
+                class="m-auto max-w-7xl md:flex-row px-14 2xl:px-0 py-8 sm:py-16 flex flex-col md:gap-3 lg:gap-5 text-center items-center"
+            >
+                <div
+                    class="md:items-start md:py-16 md:text-left flex flex-col items-center"
+                >
+                    <h2
+                        class="mb-6 md:text-4xl text-gray-900 text-4xl lg:text-6xl font-black leading-none"
+                    >
+                        Building digital products & brands.
+                    </h2>
+                    <p class="mb-10 text-xl font-normal text-gray-500">
+                        Here at flowbite we focus on markets where technology,
+                        innovation, and capital can unlock long-term value and
+                        drive economic growth.
+                    </p>
+                    <div class="md:flex-row flex flex-col gap-6 items-center">
+                        <button
+                            class="rounded-lg px-3 py-2 cursor-pointer hover:bg-purple-400 hover:text-gray-900 transition-colors bg-purple-600 text-white text-sm font-medium"
+                        >
+                            Start 30 day free trial
+                        </button>
+                        <button
+                            class="px-3 py-2 cursor-pointer hover:bg-gray-500 transition-colors hover:text-white text-gray-800 text-sm font-medium opacity-100 bg-white border border-gray-200 rounded-lg"
+                        >
+                            Pricing & FAQ
+                        </button>
+                    </div>
+                </div>
+                <img
+                    class="max-w-md w-full md:w-1/2"
+                    src="./assets/marketing-strategy 1.png"
+                    alt="Marketing Strategy"
+                />
+            </section>
+            <section class="max-w-7xl mx-auto 2xl:px-0 px-14 pb-24">
+                <ul
+                    class="lg:gap-24 lg:flex-row list-none flex-wrap lg:flex-nowrap flex gap-x-6 gap-y-3 justify-around items-center"
+                >
+                    <li class="sm:w-[30%] w-[40%] grow">
+                        <img class="w-full" src="./assets/Google.png" alt="" />
+                    </li>
+                    <li class="sm:w-[30%] w-[40%] grow">
+                        <img
+                            class="w-full"
+                            src="./assets/Microsoft.png"
+                            alt=""
+                        />
+                    </li>
+                    <li class="sm:w-[30%] w-[40%] grow">
+                        <img class="w-full" src="./assets/Spotify.png" alt="" />
+                    </li>
+                    <li class="sm:w-[30%] w-[40%] grow">
+                        <img
+                            class="w-full"
+                            src="./assets/Mailchimp.png"
+                            alt=""
+                        />
+                    </li>
+                    <li class="sm:w-[30%] w-[40%] grow">
+                        <img class="w-full" src="./assets/Airbnb.png" alt="" />
+                    </li>
+                    <li class="sm:w-[30%] w-[40%] grow">
+                        <img class="w-full" src="./assets/uber.png" alt="" />
+                    </li>
+                </ul>
+            </section>
+            <div class="bg-gray-50 flex flex-col gap-20 px-14 py-24">
+                <section
+                    class="flex items-center flex-col md:flex-row gap-5 max-w-7xl mx-auto 2xl:px-0"
+                >
+                    <div class="md:w-1/3 md:grow">
+                        <h2
+                            class="mb-4 leading-tight text-4xl font-extrabold text-gray-900"
+                        >
+                            Work with tools you already use
+                        </h2>
+                        <p class="text-gray-500 text-xl font-normal">
+                            Deliver great service experiences fast - without the
+                            complexity of traditional ITSM solutions.Accelerate
+                            critical development work, eliminate toil, and
+                            deploy changes with ease.
+                        </p>
+                        <div class="h-[1px] my-8 bg-gray-200"></div>
+                        <ul class="flex flex-col gap-4 mb-6">
+                            <li class="flex gap-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.707 8.707C13.8892 8.5184 13.99 8.2658 13.9877 8.0036C13.9854 7.7414 13.8802 7.49059 13.6948 7.30518C13.5094 7.11977 13.2586 7.0146 12.9964 7.01233C12.7342 7.01005 12.4816 7.11084 12.293 7.293L9 10.586L7.707 9.293C7.5184 9.11084 7.2658 9.01005 7.0036 9.01233C6.7414 9.0146 6.49059 9.11977 6.30518 9.30518C6.11977 9.49059 6.0146 9.7414 6.01233 10.0036C6.01005 10.2658 6.11084 10.5184 6.293 10.707L8.293 12.707C8.48053 12.8945 8.73484 12.9998 9 12.9998C9.26516 12.9998 9.51947 12.8945 9.707 12.707L13.707 8.707Z"
+                                        fill="#7E3AF2"
+                                    />
+                                </svg>
+                                <p>Continuous integration and deployment</p>
+                            </li>
+                            <li class="flex gap-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.707 8.707C13.8892 8.5184 13.99 8.2658 13.9877 8.0036C13.9854 7.7414 13.8802 7.49059 13.6948 7.30518C13.5094 7.11977 13.2586 7.0146 12.9964 7.01233C12.7342 7.01005 12.4816 7.11084 12.293 7.293L9 10.586L7.707 9.293C7.5184 9.11084 7.2658 9.01005 7.0036 9.01233C6.7414 9.0146 6.49059 9.11977 6.30518 9.30518C6.11977 9.49059 6.0146 9.7414 6.01233 10.0036C6.01005 10.2658 6.11084 10.5184 6.293 10.707L8.293 12.707C8.48053 12.8945 8.73484 12.9998 9 12.9998C9.26516 12.9998 9.51947 12.8945 9.707 12.707L13.707 8.707Z"
+                                        fill="#7E3AF2"
+                                    />
+                                </svg>
+                                <p>Development workflow</p>
+                            </li>
+                            <li class="flex gap-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.707 8.707C13.8892 8.5184 13.99 8.2658 13.9877 8.0036C13.9854 7.7414 13.8802 7.49059 13.6948 7.30518C13.5094 7.11977 13.2586 7.0146 12.9964 7.01233C12.7342 7.01005 12.4816 7.11084 12.293 7.293L9 10.586L7.707 9.293C7.5184 9.11084 7.2658 9.01005 7.0036 9.01233C6.7414 9.0146 6.49059 9.11977 6.30518 9.30518C6.11977 9.49059 6.0146 9.7414 6.01233 10.0036C6.01005 10.2658 6.11084 10.5184 6.293 10.707L8.293 12.707C8.48053 12.8945 8.73484 12.9998 9 12.9998C9.26516 12.9998 9.51947 12.8945 9.707 12.707L13.707 8.707Z"
+                                        fill="#7E3AF2"
+                                    />
+                                </svg>
+                                <p>Knowledge management</p>
+                            </li>
+                        </ul>
+                        <p class="text-gray-500 text-xl font-normal">
+                            Deliver great service experiences fast - without the
+                            complexity of traditional ITSM solutions.
+                        </p>
+                    </div>
+                    <img
+                        class="md:object-contain md:w-1/3 grow shrink-0"
+                        src="./assets/Image.png"
+                        alt="Images"
+                    />
+                </section>
+                <section
+                    class="flex flex-col md:flex-row-reverse items-center gap-5 max-w-7xl mx-auto 2xl:px-0"
+                >
+                    <div class="md:w-1/3 grow">
+                        <h2
+                            class="mb-4 leading-tight text-4xl font-extrabold text-gray-900"
+                        >
+                            We invest in the world’s potential
+                        </h2>
+                        <p class="text-gray-500 text-xl font-normal">
+                            Deliver great service experiences fast - without the
+                            complexity of traditional ITSM solutions.Accelerate
+                            critical development work, eliminate toil, and
+                            deploy changes with ease.
+                        </p>
+                        <div class="h-[1px] my-8 bg-gray-200"></div>
+                        <ul class="flex flex-col gap-4 mb-6">
+                            <li class="flex gap-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.707 8.707C13.8892 8.5184 13.99 8.2658 13.9877 8.0036C13.9854 7.7414 13.8802 7.49059 13.6948 7.30518C13.5094 7.11977 13.2586 7.0146 12.9964 7.01233C12.7342 7.01005 12.4816 7.11084 12.293 7.293L9 10.586L7.707 9.293C7.5184 9.11084 7.2658 9.01005 7.0036 9.01233C6.7414 9.0146 6.49059 9.11977 6.30518 9.30518C6.11977 9.49059 6.0146 9.7414 6.01233 10.0036C6.01005 10.2658 6.11084 10.5184 6.293 10.707L8.293 12.707C8.48053 12.8945 8.73484 12.9998 9 12.9998C9.26516 12.9998 9.51947 12.8945 9.707 12.707L13.707 8.707Z"
+                                        fill="#7E3AF2"
+                                    />
+                                </svg>
+                                <p>Dynamic reports and dashboards</p>
+                            </li>
+                            <li class="flex gap-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.707 8.707C13.8892 8.5184 13.99 8.2658 13.9877 8.0036C13.9854 7.7414 13.8802 7.49059 13.6948 7.30518C13.5094 7.11977 13.2586 7.0146 12.9964 7.01233C12.7342 7.01005 12.4816 7.11084 12.293 7.293L9 10.586L7.707 9.293C7.5184 9.11084 7.2658 9.01005 7.0036 9.01233C6.7414 9.0146 6.49059 9.11977 6.30518 9.30518C6.11977 9.49059 6.0146 9.7414 6.01233 10.0036C6.01005 10.2658 6.11084 10.5184 6.293 10.707L8.293 12.707C8.48053 12.8945 8.73484 12.9998 9 12.9998C9.26516 12.9998 9.51947 12.8945 9.707 12.707L13.707 8.707Z"
+                                        fill="#7E3AF2"
+                                    />
+                                </svg>
+                                <p>Templates for everyone</p>
+                            </li>
+                            <li class="flex gap-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.707 8.707C13.8892 8.5184 13.99 8.2658 13.9877 8.0036C13.9854 7.7414 13.8802 7.49059 13.6948 7.30518C13.5094 7.11977 13.2586 7.0146 12.9964 7.01233C12.7342 7.01005 12.4816 7.11084 12.293 7.293L9 10.586L7.707 9.293C7.5184 9.11084 7.2658 9.01005 7.0036 9.01233C6.7414 9.0146 6.49059 9.11977 6.30518 9.30518C6.11977 9.49059 6.0146 9.7414 6.01233 10.0036C6.01005 10.2658 6.11084 10.5184 6.293 10.707L8.293 12.707C8.48053 12.8945 8.73484 12.9998 9 12.9998C9.26516 12.9998 9.51947 12.8945 9.707 12.707L13.707 8.707Z"
+                                        fill="#7E3AF2"
+                                    />
+                                </svg>
+                                <p>Development workflow</p>
+                            </li>
+                            <li class="flex gap-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.707 8.707C13.8892 8.5184 13.99 8.2658 13.9877 8.0036C13.9854 7.7414 13.8802 7.49059 13.6948 7.30518C13.5094 7.11977 13.2586 7.0146 12.9964 7.01233C12.7342 7.01005 12.4816 7.11084 12.293 7.293L9 10.586L7.707 9.293C7.5184 9.11084 7.2658 9.01005 7.0036 9.01233C6.7414 9.0146 6.49059 9.11977 6.30518 9.30518C6.11977 9.49059 6.0146 9.7414 6.01233 10.0036C6.01005 10.2658 6.11084 10.5184 6.293 10.707L8.293 12.707C8.48053 12.8945 8.73484 12.9998 9 12.9998C9.26516 12.9998 9.51947 12.8945 9.707 12.707L13.707 8.707Z"
+                                        fill="#7E3AF2"
+                                    />
+                                </svg>
+                                <p>Limitless business automation</p>
+                            </li>
+                            <li class="flex gap-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.707 8.707C13.8892 8.5184 13.99 8.2658 13.9877 8.0036C13.9854 7.7414 13.8802 7.49059 13.6948 7.30518C13.5094 7.11977 13.2586 7.0146 12.9964 7.01233C12.7342 7.01005 12.4816 7.11084 12.293 7.293L9 10.586L7.707 9.293C7.5184 9.11084 7.2658 9.01005 7.0036 9.01233C6.7414 9.0146 6.49059 9.11977 6.30518 9.30518C6.11977 9.49059 6.0146 9.7414 6.01233 10.0036C6.01005 10.2658 6.11084 10.5184 6.293 10.707L8.293 12.707C8.48053 12.8945 8.73484 12.9998 9 12.9998C9.26516 12.9998 9.51947 12.8945 9.707 12.707L13.707 8.707Z"
+                                        fill="#7E3AF2"
+                                    />
+                                </svg>
+                                <p>Knowledge management</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <img
+                        class="md:object-contain md:w-1/3 grow shrink-0"
+                        src="./assets/Image (1).png"
+                        alt="Images"
+                    />
+                </section>
+            </div>
+            <div
+                class="flex flex-col md:flex-row gap-15 max-w-7xl mx-auto 2xl:px-0 px-14 py-24 bg-white"
+            >
+                <section class="py-5">
+                    <h3
+                        class="mb-3 leading-none text-lg font-medium text-purple-600"
+                    >
+                        Trusted Worldwide
+                    </h3>
+                    <h2
+                        class="mb-4 leading-tight text-4xl font-extrabold text-gray-900"
+                    >
+                        Trusted by over 600 million users and 10,000 teams
+                    </h2>
+                    <p class="text-xl font-light text-gray-500">
+                        Our rigorous security and compliance standards are at
+                        the heart of all we do. We work tirelessly to protect
+                        you and your customers.
+                    </p>
+                    <div class="my-6 h-[1px] bg-gray-200"></div>
+                    <ul class="flex flex-col items-center">
+                        <li
+                            class="mb-4 leading-none text-base font-medium text-purple-600"
+                        >
+                            <a class="flex gap-2" href="">
+                                <p>Explore Legality Guide</p>
+
+                                <span
+                                    ><svg
+                                        width="14"
+                                        height="12"
+                                        viewBox="0 0 14 12"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M13 5.66667H1H13Z"
+                                            fill="#7E3AF2"
+                                        />
+                                        <path
+                                            d="M8.33333 1L13 5.66667M13 5.66667L8.33333 10.3333M13 5.66667H1"
+                                            stroke="#7E3AF2"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li
+                            class="leading-none text-base font-medium text-purple-600"
+                        >
+                            <a class="flex gap-2" href="">
+                                <p>Visit the Trust Center</p>
+
+                                <span>
+                                    <svg
+                                        width="14"
+                                        height="12"
+                                        viewBox="0 0 14 12"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M13 5.66667H1H13Z"
+                                            fill="#7E3AF2"
+                                        />
+                                        <path
+                                            d="M8.33333 1L13 5.66667M13 5.66667L8.33333 10.3333M13 5.66667H1"
+                                            stroke="#7E3AF2"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <ul
+                        class="flex items-baseline justify-center gap-8 flex-wrap"
+                    >
+                        <li class="w-1/3 max-w-64">
+                            <svg
+                                class="mb-4"
+                                width="39"
+                                height="34"
+                                viewBox="0 0 39 34"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 4.8C0 3.52696 0.505713 2.30606 1.40589 1.40589C2.30606 0.505713 3.52696 0 4.8 0H33.6C34.873 0 36.0939 0.505713 36.9941 1.40589C37.8943 2.30606 38.4 3.52696 38.4 4.8V9.6C38.4 10.873 37.8943 12.0939 36.9941 12.9941C36.0939 13.8943 34.873 14.4 33.6 14.4H4.8C3.52696 14.4 2.30606 13.8943 1.40589 12.9941C0.505713 12.0939 0 10.873 0 9.6V4.8ZM33.6 7.2C33.6 7.83652 33.3471 8.44697 32.8971 8.89706C32.447 9.34714 31.8365 9.6 31.2 9.6C30.5635 9.6 29.953 9.34714 29.5029 8.89706C29.0529 8.44697 28.8 7.83652 28.8 7.2C28.8 6.56348 29.0529 5.95303 29.5029 5.50294C29.953 5.05286 30.5635 4.8 31.2 4.8C31.8365 4.8 32.447 5.05286 32.8971 5.50294C33.3471 5.95303 33.6 6.56348 33.6 7.2ZM0 24C0 22.727 0.505713 21.5061 1.40589 20.6059C2.30606 19.7057 3.52696 19.2 4.8 19.2H33.6C34.873 19.2 36.0939 19.7057 36.9941 20.6059C37.8943 21.5061 38.4 22.727 38.4 24V28.8C38.4 30.073 37.8943 31.2939 36.9941 32.1941C36.0939 33.0943 34.873 33.6 33.6 33.6H4.8C3.52696 33.6 2.30606 33.0943 1.40589 32.1941C0.505713 31.2939 0 30.073 0 28.8V24ZM33.6 26.4C33.6 27.0365 33.3471 27.647 32.8971 28.0971C32.447 28.5471 31.8365 28.8 31.2 28.8C30.5635 28.8 29.953 28.5471 29.5029 28.0971C29.0529 27.647 28.8 27.0365 28.8 26.4C28.8 25.7635 29.0529 25.153 29.5029 24.7029C29.953 24.2529 30.5635 24 31.2 24C31.8365 24 32.447 24.2529 32.8971 24.7029C33.3471 25.153 33.6 25.7635 33.6 26.4Z"
+                                    fill="#7E3AF2"
+                                />
+                            </svg>
+                            <h3
+                                class="mb-2 leading-tight text-gray-900 text-2xl font-bold"
+                            >
+                                99.99% uptime
+                            </h3>
+                            <p class="text-base font-light text-gray-500">
+                                for Flowbite, with zero maintenance downtime
+                            </p>
+                        </li>
+                        <li class="w-1/3 max-w-64">
+                            <svg
+                                class="mb-4"
+                                width="44"
+                                height="34"
+                                viewBox="0 0 44 34"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M19.2 7.2C19.2 9.10956 18.4414 10.9409 17.0912 12.2912C15.7409 13.6414 13.9096 14.4 12 14.4C10.0904 14.4 8.25909 13.6414 6.90883 12.2912C5.55857 10.9409 4.8 9.10956 4.8 7.2C4.8 5.29044 5.55857 3.45909 6.90883 2.10883C8.25909 0.758569 10.0904 0 12 0C13.9096 0 15.7409 0.758569 17.0912 2.10883C18.4414 3.45909 19.2 5.29044 19.2 7.2ZM38.4 7.2C38.4 8.14552 38.2138 9.08178 37.8519 9.95532C37.4901 10.8289 36.9598 11.6226 36.2912 12.2912C35.6226 12.9598 34.8289 13.4901 33.9553 13.8519C33.0818 14.2138 32.1455 14.4 31.2 14.4C30.2545 14.4 29.3182 14.2138 28.4447 13.8519C27.5711 13.4901 26.7774 12.9598 26.1088 12.2912C25.4402 11.6226 24.9099 10.8289 24.5481 9.95532C24.1862 9.08178 24 8.14552 24 7.2C24 5.29044 24.7586 3.45909 26.1088 2.10883C27.4591 0.758569 29.2904 0 31.2 0C33.1096 0 34.9409 0.758569 36.2912 2.10883C37.6414 3.45909 38.4 5.29044 38.4 7.2ZM28.632 33.6C28.7424 32.8152 28.8 32.016 28.8 31.2C28.8056 27.4293 27.537 23.7672 25.2 20.808C27.0242 19.7548 29.0935 19.2003 31.1999 19.2003C33.3063 19.2003 35.3756 19.7547 37.1999 20.8079C39.0241 21.8611 40.5389 23.3759 41.5922 25.2001C42.6454 27.0243 43.1999 29.0936 43.2 31.2V33.6H28.632ZM12 19.2C15.1826 19.2 18.2348 20.4643 20.4853 22.7147C22.7357 24.9652 24 28.0174 24 31.2V33.6H0V31.2C0 28.0174 1.26428 24.9652 3.51472 22.7147C5.76515 20.4643 8.8174 19.2 12 19.2Z"
+                                    fill="#7E3AF2"
+                                />
+                            </svg>
+                            <h3
+                                class="mb-2 leading-tight text-gray-900 text-2xl font-bold"
+                            >
+                                600M+ Users
+                            </h3>
+                            <p class="text-base font-light text-gray-500">
+                                trusted by over 600 milion users around the
+                                world
+                            </p>
+                        </li>
+                        <li class="w-1/3 max-w-64">
+                            <svg
+                                class="mb-4"
+                                width="48"
+                                height="48"
+                                viewBox="0 0 48 48"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M7.2 2.39999C6.56348 2.39999 5.95303 2.65285 5.50295 3.10294C5.05286 3.55302 4.8 4.16347 4.8 4.79999C4.8 5.43651 5.05286 6.04696 5.50295 6.49705C5.95303 6.94714 6.56348 7.19999 7.2 7.19999H10.128L10.86 10.1328C10.8673 10.1666 10.8753 10.2002 10.884 10.2336L14.1432 23.2656L12 25.4064C8.976 28.4304 11.1168 33.6 15.3936 33.6H36C36.6365 33.6 37.247 33.3471 37.6971 32.897C38.1471 32.447 38.4 31.8365 38.4 31.2C38.4 30.5635 38.1471 29.953 37.6971 29.5029C37.247 29.0528 36.6365 28.8 36 28.8H15.3936L17.7936 26.4H33.6C34.0456 26.3998 34.4823 26.2755 34.8613 26.0411C35.2402 25.8067 35.5464 25.4714 35.7456 25.0728L42.9456 10.6728C43.1284 10.307 43.2147 9.90053 43.1963 9.49201C43.1779 9.08348 43.0554 8.68644 42.8405 8.33854C42.6255 7.99064 42.3253 7.70344 41.9682 7.50418C41.611 7.30492 41.2089 7.20021 40.8 7.19999H15.072L14.328 4.21679C14.198 3.6978 13.8983 3.23713 13.4765 2.90797C13.0547 2.5788 12.535 2.40001 12 2.39999H7.2ZM38.4 39.6C38.4 40.5548 38.0207 41.4704 37.3456 42.1456C36.6705 42.8207 35.7548 43.2 34.8 43.2C33.8452 43.2 32.9296 42.8207 32.2544 42.1456C31.5793 41.4704 31.2 40.5548 31.2 39.6C31.2 38.6452 31.5793 37.7295 32.2544 37.0544C32.9296 36.3793 33.8452 36 34.8 36C35.7548 36 36.6705 36.3793 37.3456 37.0544C38.0207 37.7295 38.4 38.6452 38.4 39.6ZM15.6 43.2C16.5548 43.2 17.4705 42.8207 18.1456 42.1456C18.8207 41.4704 19.2 40.5548 19.2 39.6C19.2 38.6452 18.8207 37.7295 18.1456 37.0544C17.4705 36.3793 16.5548 36 15.6 36C14.6452 36 13.7295 36.3793 13.0544 37.0544C12.3793 37.7295 12 38.6452 12 39.6C12 40.5548 12.3793 41.4704 13.0544 42.1456C13.7295 42.8207 14.6452 43.2 15.6 43.2Z"
+                                    fill="#7E3AF2"
+                                />
+                            </svg>
+                            <h3
+                                class="mb-2 leading-tight text-gray-900 text-2xl font-bold"
+                            >
+                                Millions
+                            </h3>
+                            <p class="text-base font-light text-gray-500">
+                                of transactions per day
+                            </p>
+                        </li>
+                        <li class="w-1/3 max-w-64">
+                            <svg
+                                class="mb-4"
+                                width="39"
+                                height="39"
+                                viewBox="0 0 39 39"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19.2 38.4C24.2922 38.4 29.1758 36.3771 32.7765 32.7765C36.3771 29.1758 38.4 24.2922 38.4 19.2C38.4 14.1078 36.3771 9.22425 32.7765 5.62355C29.1758 2.02285 24.2922 0 19.2 0C14.1078 0 9.22425 2.02285 5.62355 5.62355C2.02285 9.22425 0 14.1078 0 19.2C0 24.2922 2.02285 29.1758 5.62355 32.7765C9.22425 36.3771 14.1078 38.4 19.2 38.4ZM5.5968 14.4648C6.4879 11.9129 8.07789 9.66265 10.1856 7.9704C10.8288 8.952 11.9376 9.6 13.2 9.6C14.1548 9.6 15.0705 9.97928 15.7456 10.6544C16.4207 11.3295 16.8 12.2452 16.8 13.2V14.4C16.8 15.673 17.3057 16.8939 18.2059 17.7941C19.1061 18.6943 20.327 19.2 21.6 19.2C22.873 19.2 24.0939 18.6943 24.9941 17.7941C25.8943 16.8939 26.4 15.673 26.4 14.4C26.3996 13.3258 26.7596 12.2825 27.4222 11.4371C28.0849 10.5917 29.012 9.99299 30.0552 9.7368C32.3455 12.3568 33.6054 15.7201 33.6 19.2C33.6 20.016 33.5328 20.82 33.4008 21.6H31.2C29.927 21.6 28.7061 22.1057 27.8059 23.0059C26.9057 23.9061 26.4 25.127 26.4 26.4V31.6728C24.2119 32.9388 21.7279 33.6037 19.2 33.6V28.8C19.2 27.527 18.6943 26.3061 17.7941 25.4059C16.8939 24.5057 15.673 24 14.4 24C13.127 24 11.9061 23.4943 11.0059 22.5941C10.1057 21.6939 9.6 20.473 9.6 19.2C9.60043 18.0648 9.1985 16.9662 8.46559 16.0993C7.73269 15.2323 6.71625 14.6532 5.5968 14.4648Z"
+                                    fill="#7E3AF2"
+                                />
+                            </svg>
+                            <h3
+                                class="mb-2 leading-tight text-gray-900 text-2xl font-bold"
+                            >
+                                100+ countries
+                            </h3>
+                            <p class="text-base font-light text-gray-500">
+                                have used Flowbite to create functional websites
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="2xl:px-0 bg-gray-50 ">
+                <section class="2xl:px-0 px-14 py-24 m-auto max-w-7xl flex flex-col gap-6 items-center text-center">
+                    <svg
+                        width="48"
+                        height="36"
+                        viewBox="0 0 48 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M28.034 36L28.034 21.218C28.034 9.81 35.496 2.078 46 0L47.99 4.302C43.126 6.136 40 11.578 40 16H48V36H28.034ZM0 36V21.218C0 9.81 7.496 2.076 18 0L19.992 4.302C15.126 6.136 12 11.578 12 16H19.966L19.966 36L0 36Z"
+                            fill="#9CA3AF"
+                        />
+                    </svg>
+                    <p class="leading-relaxed text-2xl font-semibold text-gray-900 max-w-3xl">
+                        "Flowbite is just awesome. It contains tons of
+                        predesigned components and pages starting from login
+                        screen to complex dashboard. Perfect choice for your
+                        next SaaS application."
+                    </p>
+                    <div class="flex items-center">
+                        <img class="mr-[14px]" src="./assets/michael-avatar.png" alt="" />
+                        <span class="leading-relaxed text-base font-semibold text-gray-900">Micheal Gough</span>
+                        <span class="leading-relaxed text-base font-semibold text-gray-900 mx-3">/</span>
+                        <span class="leading-relaxed text-sm font-normal text-gray-500">CEO at Google</span>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
