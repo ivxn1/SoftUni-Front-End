@@ -6,6 +6,7 @@
         <title>Tailwind Exercise</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link rel="stylesheet" href="style.css" />
+        <script src="./scripts/accordion.js" defer></script>
     </head>
     <body>
         <div class="shadow-sm sticky top-0 left-0 bg-white">
@@ -541,8 +542,12 @@
                             long-term value and drive economic growth.
                         </p>
                     </section>
-                    <section class="flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 lg:flex-nowrap ">
-                        <article class="grow md:w-[40%] max-w-sm p-8 border border-gray-200 shadow-md rounded-lg">
+                    <section
+                        class="flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 lg:flex-nowrap"
+                    >
+                        <article
+                            class="grow md:w-[40%] max-w-sm p-8 border border-gray-200 shadow-md rounded-lg"
+                        >
                             <h3
                                 class="text-center mb-4 text-2xl font-semibold text-gray-900"
                             >
@@ -632,7 +637,11 @@
                                                 />
                                             </svg>
                                         </span>
-                                        Team size: <span class="textbase font-semibold text-gray-900">1 developer</span>
+                                        Team size:
+                                        <span
+                                            class="textbase font-semibold text-gray-900"
+                                            >1 developer</span
+                                        >
                                     </p>
                                 </li>
                                 <li>
@@ -655,7 +664,11 @@
                                                 />
                                             </svg>
                                         </span>
-                                        Premium support: <span class="textbase font-semibold text-gray-900">6 months</span>
+                                        Premium support:
+                                        <span
+                                            class="textbase font-semibold text-gray-900"
+                                            >6 months</span
+                                        >
                                     </p>
                                 </li>
                                 <li>
@@ -678,7 +691,11 @@
                                                 />
                                             </svg>
                                         </span>
-                                        Free updates: <span class="textbase font-semibold text-gray-900">6 months</span>
+                                        Free updates:
+                                        <span
+                                            class="textbase font-semibold text-gray-900"
+                                            >6 months</span
+                                        >
                                     </p>
                                 </li>
                             </ul>
@@ -688,7 +705,9 @@
                                 Get started
                             </button>
                         </article>
-                        <article class="border border-gray-200 grow shadow-md rounded-lg md:w-[40%] max-w-sm p-8">
+                        <article
+                            class="border border-gray-200 grow shadow-md rounded-lg md:w-[40%] max-w-sm p-8"
+                        >
                             <h3
                                 class="text-center mb-4 text-2xl font-semibold text-gray-900"
                             >
@@ -846,7 +865,9 @@
                                 Get started
                             </button>
                         </article>
-                        <article class="border grow border-gray-200 shadow-md rounded-lg md:w-[40%] max-w-sm p-8">
+                        <article
+                            class="border grow border-gray-200 shadow-md rounded-lg md:w-[40%] max-w-sm p-8"
+                        >
                             <h3
                                 class="text-center mb-4 text-2xl font-semibold text-gray-900"
                             >
@@ -1007,6 +1028,217 @@
                         <article class="max-w-sm grow lg:hidden"></article>
                     </section>
                 </div>
+            </div>
+            <div class="bg-white 2xl:px-0">
+                <section class="pb-24 px-14 m-auto">
+                    <h2
+                        class="mb-14 text-center leading-tight text-4xl font-extrabold text-gray-900"
+                    >
+                        Frequently asked questions
+                    </h2>
+                    <div class="max-w-2xl">
+                        <button
+                            onclick="toggleAccordionOption(this)"
+                            class="cursor-pointer w-full py-6 flex justify-between items-center border-b border-gray-200"
+                        >
+                            <p>Can I use FlowBite in open-source projects?</p>
+                            <svg
+                                class="down transition-transform duration-300 ease-out"
+                                width="12"
+                                height="7"
+                                viewBox="0 0 12 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M10.3333 1L5.66667 5.66667L1 1"
+                                    stroke="#6B7280"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <div
+                            class="border-b border-gray-200 accordion-content overflow-hidden h-0 transition-[height] duration-300 ease-in-out"
+                        >
+                            <p
+                                class="pt-5 mb-1.5 text-base font-normal text-gray-500"
+                            >
+                                Generally, it is accepted to use FlowBite in
+                                open-source projects, as long as it is not a UI
+                                library, a theme, a template, a page-builder
+                                that would be considered as an alternative to
+                                FlowBite itself.
+                            </p>
+                            <p
+                                class="mb-1.5 text-base font-normal text-gray-500"
+                            >
+                                With that being said, feel free to use this
+                                design kit for your open-source projects.
+                            </p>
+
+                            <p class="pb-5 text-base font-normal text-gray-500">
+                                Find out more information by
+                                <a
+                                    class="text-purple-600 text-base font-medium"
+                                    href=""
+                                    >reading the license</a
+                                >.
+                            </p>
+                        </div>
+                        <button
+                            onclick="toggleAccordionOption(this)"
+                            class="transition-transform duration-200 cursor-pointer w-full py-6 flex justify-between items-center border-b border-gray-200"
+                        >
+                            Where can I access my download files?
+                            <svg
+                                class="down transition-transform duration-300 ease-out"
+                                width="12"
+                                height="7"
+                                viewBox="0 0 12 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M10.3333 1L5.66667 5.66667L1 1"
+                                    stroke="#6B7280"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <div
+                            class="border-b border-gray-200 accordion-content overflow-hidden h-0 transition-[height] duration-300 ease-in-out"
+                        >
+                            <p
+                                class="pt-5 mb-1.5 text-base font-normal text-gray-500"
+                            >
+                                Generally, it is accepted to use FlowBite in
+                                open-source projects, as long as it is not a UI
+                                library, a theme, a template, a page-builder
+                                that would be considered as an alternative to
+                                FlowBite itself.
+                            </p>
+                            <p
+                                class="mb-1.5 text-base font-normal text-gray-500"
+                            >
+                                With that being said, feel free to use this
+                                design kit for your open-source projects.
+                            </p>
+
+                            <p class="pb-5 text-base font-normal text-gray-500">
+                                Find out more information by
+                                <a
+                                    class="text-purple-600 text-base font-medium"
+                                    href=""
+                                    >reading the license</a
+                                >.
+                            </p>
+                        </div>
+                        <button
+                            onclick="toggleAccordionOption(this)"
+                            class="cursor-pointer w-full py-6 flex justify-between items-center border-b border-gray-200"
+                        >
+                            Can I use FlowBite for commercial purposes?
+                            <svg
+                                class="down transition-transform duration-300 ease-out"
+                                width="12"
+                                height="7"
+                                viewBox="0 0 12 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M10.3333 1L5.66667 5.66667L1 1"
+                                    stroke="#6B7280"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <div
+                            class="accordion-content overflow-hidden h-0 transition-[height] duration-300 ease-in-out border-b border-gray-200"
+                        >
+                            <p
+                                class="pt-5 mb-1.5 text-base font-normal text-gray-500"
+                            >
+                                Generally, it is accepted to use FlowBite in
+                                open-source projects, as long as it is not a UI
+                                library, a theme, a template, a page-builder
+                                that would be considered as an alternative to
+                                FlowBite itself.
+                            </p>
+                            <p
+                                class="mb-1.5 text-base font-normal text-gray-500"
+                            >
+                                With that being said, feel free to use this
+                                design kit for your open-source projects.
+                            </p>
+
+                            <p class="pb-5 text-base font-normal text-gray-500">
+                                Find out more information by
+                                <a
+                                    class="text-purple-600 text-base font-medium"
+                                    href=""
+                                    >reading the license</a
+                                >.
+                            </p>
+                        </div>
+                        <button
+                            onclick="toggleAccordionOption(this)"
+                            class="cursor-pointer w-full py-6 flex justify-between items-center"
+                        >
+                            What about browser support?
+                            <svg
+                                class="down transition-transform duration-300 ease-out"
+                                width="12"
+                                height="7"
+                                viewBox="0 0 12 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M10.3333 1L5.66667 5.66667L1 1"
+                                    stroke="#6B7280"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <div
+                            class="accordion-content overflow-hidden h-0 transition-[height] duration-300 ease-in-out border-t border-gray-200"
+                        >
+                            <p
+                                class="pt-5 mb-1.5 text-base font-normal text-gray-500"
+                            >
+                                Generally, it is accepted to use FlowBite in
+                                open-source projects, as long as it is not a UI
+                                library, a theme, a template, a page-builder
+                                that would be considered as an alternative to
+                                FlowBite itself.
+                            </p>
+                            <p
+                                class="mb-1.5 text-base font-normal text-gray-500"
+                            >
+                                With that being said, feel free to use this
+                                design kit for your open-source projects.
+                            </p>
+
+                            <p class="pb-5 text-base font-normal text-gray-500">
+                                Find out more information by
+                                <a
+                                    class="text-purple-600 text-base font-medium"
+                                    href=""
+                                    >reading the license</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
     </body>
